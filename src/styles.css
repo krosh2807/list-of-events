@@ -1,0 +1,120 @@
+/* Общие стили */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Форма */
+.event-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.event-form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s;
+}
+
+.event-form input:focus {
+  border-color: #FF69B4;;
+  outline: none;
+}
+
+.event-form button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #FF69B4;;
+  color: white;
+  transition: background 0.2s;
+}
+
+.event-form button:hover {
+  background: #C71585;
+}
+
+/* Список */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafafa;
+  border: 1px solid #e1e4e8;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.event-list li:hover {
+  background: #f0f4ff;
+  transform: scale(1.01);
+}
+
+/* Текст */
+.event-list span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Кнопки списка */
+.event-list button {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.event-list button:first-of-type {
+  background: #ffb74d;
+  color: #fff;
+}
+
+.event-list button:first-of-type:hover {
+  background: #f57c00;
+}
+
+.event-list button:last-of-type {
+  background: #e57373;
+  color: #fff;
+}
+
+.event-list button:last-of-type:hover {
+  background: #d32f2f;
+}
